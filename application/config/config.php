@@ -18,7 +18,7 @@ date_default_timezone_set('Asia/Seoul');
 */
 // $base  = "http://".$_SERVER['HTTP_HOST'];
 // $base .= str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
-$config['base_url'] = "http://localhost";//http://taodalin.com";
+$config['base_url'] = "http://all-5775.com";//http://taodalin.com";
 
 /*
 |--------------------------------------------------------------------------
