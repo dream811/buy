@@ -1,0 +1,204 @@
+.cm_board_item_post {
+    overflow: hidden;
+}
+.cm_board_item_post ul {
+    overflow: hidden;
+}
+.cm_board_item_post li {
+    position: relative;
+    list-style: none;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.cm_board_item_post .posting {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    min-height: 120px;
+    padding-right: 80px;
+}
+.cm_board_item_post .posting:before {
+    content: "";
+    width: 39px;
+    height: 20px;
+    background: transparent url(/assets/images/board_openclose.gif) left top no-repeat;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -10px;
+}
+.cm_board_item_post .thumb {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+    background: transparent url(/assets/images/no_conts_thumb.png) center center no-repeat;
+    margin: 10px 15px;
+    border-radius: 500px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+#ID_qna_list img {
+    max-width: 100%;
+}
+
+.cm_board_item_post .thumb img {
+    width: 100%;
+    float: left;
+    border-radius: 5px;
+}
+
+.cm_board_item_post .conts {
+    padding: 15px;
+    overflow: hidden;
+    margin: 0 10px 0 120px;
+}
+.cm_board_item_post .conts .before {
+    display: block;
+}
+.cm_board_item_post .conts dt {
+    overflow: hidden;
+    padding-right: 100px;
+}
+.cm_board_item_post .conts dd {
+    color: #777;
+    overflow: hidden;
+    line-height: 1.4;
+    font-size: 12px;
+    margin-top: 8px;
+    text-overflow: ellipsis;
+    max-width: 550px;
+}
+.cm_board_item_post .conts .after {
+    display: none;
+}
+
+.cm_board_item_post .conts .title {
+    float: left;
+    color: #000;
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: -1px;
+    line-height: 1.4;
+}
+.cm_board_item_post .conts .info {
+    margin-top: 30px;
+}
+.cm_board_item_post .date {
+    float: left;
+    font-family: 'lato';
+    color: #999;
+    font-size: 12px;
+    letter-spacing: 0px;
+    line-height: 23px;
+    margin-left: 10px
+}
+.cm_board_item_post .writer {
+    float: left;
+    color: #555;
+    font-size: 12px;
+    line-height: 23px;
+    margin-left: 15px;
+    font-weight: 600;
+}
+.cm_board_item_post .texticon_pack {
+    position: absolute;
+    right: 100px;
+    top: 15px;
+}
+.texticon_pack .dark {
+    background: #474747 !important;
+}
+.texticon_pack span {
+    letter-spacing: 0px;
+    font-size: 12px;
+}
+
+.cm_board_item_post .post_bottom_btn {
+    overflow: hidden;
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    z-index: 55;
+}
+.cm_board_item_post .post_bottom_btn .btn {
+    display: block;
+    float: left;
+    background-color: #eee;
+    margin-left: 5px;
+    border-radius: 100px;
+    padding: 0 15px;
+}
+.cm_board_item_post .post_bottom_btn .btn_wish .txt {
+    background: transparent url(/assets/images/cart_aditem_ic_wish.gif) left center no-repeat;
+    padding-left: 18px;
+}
+
+.cm_board_item_post .post_bottom_btn .btn_open .txt {
+    background: transparent url(/assets/images/cart_aditem_ic_open.gif) left center no-repeat;
+    padding-left: 18px;
+}
+
+.texticon_pack span {
+    display: inline-block;
+    line-height: 23px;
+    line-height: 24px\0 !important;
+    height: 22px;
+    padding: 0 12px 0 12px;
+    margin: 0;
+    cursor: default;
+    overflow: hidden;
+    border-radius: 60px;
+    font-weight: 400;
+    font-size: 11px;
+    color: #fff !important;
+}
+
+.cm_board_item_post .post_bottom_btn .btn_delete {
+    background: #666;
+}
+
+.cm_board_item_post .post_bottom_btn .btn .txt {
+    font-size: 11px;
+    color: #444;
+    line-height: 25px;
+    letter-spacing: -0.5px;
+    font-weight: 600;
+}
+.cm_board_item_post .post_bottom_btn .btn_delete .txt {
+    color: #ccc;
+}
+
+.cm_board_item_post .conts .title_icon {
+    float: left;
+    margin: 1px 0 0 10px;
+    overflow: hidden;
+}
+.cm_board_item_post .post_bottom_btn .btn:hover {
+    background-color: #333;
+}
+.cm_board_item_post .post_bottom_btn .btn:hover .txt {
+    color: #fff;
+}
+.cm_board_item_post li:hover .posting {
+    background: #fafafa;
+    border: 1px solid #999;
+}
+.texticon_pack .red {
+    background: #ff365c !important;
+}
+
+.container{
+	margin-top: 1px;
+}
+.open .after{
+    display: block !important;
+}
+
+.cm_board_item_post .post_bottom_btn .if_wish .txt {
+    background: transparent url(/assets/images/cart_aditem_ic_wish_hit.gif) left center no-repeat;
+    padding-left: 18px;
+}

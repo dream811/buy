@@ -1,0 +1,61 @@
+.pop-title {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    background: #0066CC;
+    color: #FFF;
+    border-bottom: 1px solid #00488f;
+}
+.pop-title h3 {
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: "Nanum Gothic", Nanum Gothic;
+}
+
+#pop_wrap {
+    padding: 10px;
+    background: #fff;
+}
+.orderStepTit {
+    position: relative;
+    height: 30px;
+    background: #7eaacc;
+    border: 1px solid #6497bf;
+    overflow: hidden;
+}
+.orderStepTit h4 {
+    font-size: 13px;
+    color: #fff;
+    margin: 7px 0 0 10px;
+}
+.order_write tbody th {
+    padding: 14px 8px;
+    text-align: left;
+    color: #707070;
+    border-right: 1px solid #e5e5e5;
+    background-color: #fbfbfb;
+    letter-spacing: -0.05em;
+}
+.order_write {
+    border-left: 1px solid #e5e5e5;
+    border-right: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+}
+.input_txt2 {
+    height: 25px;
+    line-height: 25px;
+    border: 1px solid #c5c5c5;
+    font-size: 12px;
+    padding: 4px;
+}
+.order_write tbody td {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 1px solid #e5e5e5;
+    line-height: 130%;
+}
+.order_write tbody td {
+    padding: 10px 8px;
+}
+.red1 {
+    color: #ff3300;
+}

@@ -1,0 +1,27 @@
+.event_list .thumnail img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.event_list .thumnail.col-md-6{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.event_list .event_info h4 {
+    margin: 7px 0 16px;
+    font-weight: bold;
+    color: #3498c9;
+    font-size: 15px;
+}
+.event_list .event_info .date {
+    width: auto;
+    margin-top: 10px;
+    color: #ea5280;
+}
+.event_list .event_info .txt {
+    margin-bottom: 5px;
+    color: #727272;
+    line-height: 14px;
+}

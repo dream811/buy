@@ -1,0 +1,174 @@
+.orderTit {
+    position: relative;
+    height: 40px;
+    background: #82cbc4 ;
+    border: 2px solid #82cbc4 ;
+    padding: 5px 0px;
+}
+.orderTit h4 {
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    margin: 4px 0 0 0;
+    font-weight: bold;
+}
+.orderAgreeTit {
+    margin: 0px 10px 10px 10px;
+    color: #ff0000;
+    font-weight: bold;
+    font-family: s-core-dream-regular;
+    border-bottom: 1px #000 dotted;
+    padding-bottom: 10px;
+}
+.orderAgreeCk {
+    margin: 10px 5px 5px;
+    color: #d30009;
+    font-size: 12px;
+}
+
+.orderStepTit p .stepTxt {
+    color: #fff;
+    font-size: 11px;
+}
+.orderStepTit p .stepNo {
+    color: #fff;
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+.orderStepTit p {
+    float: left;
+    width: 21%;
+    height: 50px;
+    background: #82cbc4;
+    text-align: center;
+    line-height: 50px;
+}
+.orderStepTit h4 {
+    position: relative;
+    font-size: 17px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    margin: 0;
+    margin-left: 10px;
+    float: left;
+}
+.orderStepTit {
+    position: relative;
+    height: 50px;
+    background: #444;
+}
+
+.areaMyAddrBox {
+    width: 100%;
+    overflow: hidden;
+    margin: 10px 0 10px 0;
+    background: #fafafa;
+}
+.areaMyAddr {
+    padding: 5px 0 0 20px;
+}
+.stock-font {
+    font-size: 14px;
+    border: 0px;
+    color: red;
+    background: transparent;
+    font-weight: bold;
+    width: 30px;
+}
+
+.proBtn_write tbody td {
+    padding: 0px 8px 16px 0px;
+    background: #f0f0f0;
+}
+.proTtAmt li {
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+.proTtAmt {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: red;
+}
+.proTtAmt .proTtBtmTxt {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 20px;
+    display: block;
+    padding-top: 5px;
+}
+.add_delivery{
+    background-color: #313131
+}
+
+.add_delivery .parts1{ font-size: 18px;font-family: s-core-dream-medium }
+.add_delivery .parts2{}
+
+.service_part{
+    background: linear-gradient(#1c4b92,#3981e5 30.71%);
+    height: 42px;
+}
+.service_part .parts1{ font-size: 17px;font-family: s-core-dream-medium }
+.service_part .parts2{ font-family: s-core-dream-medium }
+.agree_box_custom{
+    height: 150px;
+    overflow-y: scroll;
+    padding: 0px 10px 0px 10px;
+}
+#Multi_FL {
+  display: none;
+}
+
+.add_parts .parts1{
+    width: 100%;
+}
+
+.label_check{
+    position: absolute;
+    bottom: 1px;
+    right: 25%;
+}
+
+.income_parts .parts1{
+    width: 100%;
+}
+.label_income{
+    position: absolute;
+    bottom: 2px;
+    right: 25%;
+}
+
+.imt_t{
+    font-family: s-core-dream-light;
+    font-size: 12px
+}
+.gold_element h4{
+    font-family: s-core-dream-bold;
+    text-shadow: 2px 2px #4b4b4b;
+    color: #d2d2d2;
+    text-align: center;
+    line-height: 50px;
+    height: 50px;
+    font-size: 22px;
+}
+.uti{
+    font-family: s-core-dream-medium;
+}
+
+@media only screen and ( min-width: 500px ) and ( max-width: 992px ){
+    .label_check,.label_income{bottom: 10px;}
+    .label_income img,.label_check img{width: 25px;}
+}
+@media only screen and ( min-width: 992px ){
+    .label_check,.label_income{bottom: 20px;}
+    .label_income img,.label_check img{width: 40px;}
+}
+.goods_img{
+    margin-bottom: 10px
+}

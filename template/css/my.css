@@ -1,0 +1,68 @@
+.myPageTab2  a {
+    display: block;
+}
+
+.myPageTab2 .fr {
+    display: block;
+    min-width: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background: #acacac;
+    border-radius: 20px;
+}
+
+.myPageTab2  li{
+    width: 100%;
+    height: 25px;
+    line-height: 25px;
+}
+
+.myPageTab2 h3 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-bottom: 12px;
+}
+.myPageTab2  img {
+    padding-bottom: 5px;
+}
+.myPageTab2 div {
+    padding: 10px;
+    padding-top: 15px;
+    border: 1px solid #dbe4eb;
+    background: #f1f5f8;
+    min-height: 240px;
+}
+
+.myPageTab2{
+    margin: 10px 0px 10px;
+}
+
+.myPageTab2 li a.selected .fr{
+    background: #188ae2;
+}
+
+#contact_modal .table th, #register_form .table th{
+    border-top: none !important;
+    width: 170px;
+    background: #f3f0f0;
+}
+
+.header_my{
+    background-color: #82cbc4;
+}
+
+.clrMemLvl1{
+    font-size: 22px;
+}
+
+.vertical-none th,.vertical-none td{
+    border-right: none !important;
+    border-left: none !important;
+}
+

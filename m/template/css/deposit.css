@@ -1,0 +1,17 @@
+.s_tit_box2{
+    margin-bottom: 22px;
+}
+.btnBoxVw .boxTy2 {
+    background: #c00000;
+}
+
+.no-border td,.no-border th{
+		border-top:none !important;
+	}
+.table-11 td, .table-11 th {
+    padding: .45rem !important;
+    font-size: 11px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 50px;
+}

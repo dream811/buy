@@ -1,0 +1,109 @@
+
+.padgeName div.sub_name{
+    font-size: 14px;
+    color: #ef8589;
+    padding-bottom: 10px;
+    border-bottom: 10px solid #2083a5
+}
+
+.padgeName {
+    height: 61px;
+}
+
+.padgeName h2 {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.cm_shop_entered{
+	margin-bottom: 15px;
+}
+
+.cm_shop_entered .name{
+	font-size: 18px;
+	font-weight: 600;
+	color: #2083a5;
+	letter-spacing: -1px
+}
+.pg_name{
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.cm_shop_cart_sum{
+	overflow: hidden;
+	background: #fff;
+	border: 3px solid #e4e4e4;
+	text-align: right;
+}
+
+.lineup{
+	display: inline-block;
+}
+
+
+
+
+.cm_shop_cart_sum .box{
+	float: left;
+	position: relative;
+	padding: 15px 60px;
+}
+
+.cm_shop_cart_sum .equal_box{
+	border-right: 0
+}
+
+.cm_shop_cart_sum .equal_box .icon{
+	background: #fff url(/assets/images/cart_sum_ic_equal.png) no-repeat;
+}
+
+.cm_shop_cart_sum .box .icon{
+	width: 30px;
+	height: 30px;
+	position:absolute;
+	left: -10px;
+	top: 50%;
+	margin-top: -15px;
+}
+
+.cm_shop_cart_sum .txt{
+	font-size: 13px;
+	color: #333;
+	display: block;
+}
+
+.cm_shop_cart_sum .price{
+	overflow: hidden;
+	margin-top: 3px;
+}
+
+.cm_shop_cart_sum .equal_box .price strong{
+	color: #ff6000;
+}
+.cm_shop_cart_sum .price strong{
+	font-size: 23px;
+	font-weight: 800;
+	float: left;
+}
+
+.cm_shop_cart_sum .price em{
+	font-size:15px;
+	margin:8px 0 0 2px;
+	float:  left;
+	color: #333;
+	font-style: normal;
+}
+
+.e_disabled,.sold_out{
+    position: relative;
+}
+
+.sold_out_text{
+    font-size: 36px;
+    font-weight: 900;
+}
+
+.e_disabled .pg_name,.sold_out .pg_name,.e_disabled .pg_count,.sold_out .pg_count{
+	opacity: 0.4
+}

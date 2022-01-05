@@ -1,0 +1,140 @@
+.agree_box_custom {
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #eee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    letter-spacing: -0.02em;
+    line-height: 140%;
+}
+
+.orderStepTit p .stepTxt {
+    color: #fff;
+    font-size: 11px;
+}
+.orderStepTit p .stepNo {
+    color: #fff;
+    font-size: 22px;
+    font-weight: bold;
+    margin-left: 0px;
+}
+.orderStepTit p {
+    float: left;
+    width: 15%;
+    height: 45px;
+    background: #82cbc4;
+    text-align: center;
+    line-height: 45px;
+    border-bottom: 1px solid #82cbc4
+}
+.orderStepTit h4 {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    left: 10px;
+    line-height: 45px;
+}
+.orderStepTit {
+    position: relative;
+    height: 45px;
+    background: #444;
+}
+
+.btnBoxVw .boxTy2 {
+    background: #c00000;
+}
+.proTtAmt li {
+    width: 100%;
+    height: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    color: red;
+}
+
+.proTtAmt {
+    position: relative;
+    background-color: #f0f0f0;
+    padding: 10px;
+    color: red;
+}
+.proTtAmt .proTtBtmTxt {
+    font-size: 11px;
+    font-weight: normal;
+    line-height: 20px;
+    display: block;
+    padding-top: 5px;
+}
+.orderTit {
+    position: relative;
+    height: 40px;
+    background: #82cbc4;
+    padding: 5px 0px;
+}
+.orderTit h4 {
+    font-size: 18px;
+    color: #fff;
+    text-align: center;
+    color: #fff;
+    margin: 6px 0 0 0;
+}
+
+
+.orderAgreeTit {
+    margin: 15px 0 5px 5px;
+    color: #333;
+    font-weight: bold;
+}
+.orderAgreeCk {
+    margin: 10px 5px 5px;
+    color: #d30009;
+    font-size: 12px;
+}
+.rdoBox li {
+    float: left;
+    margin-right: 40px;
+}
+.rdoFtBig-cus{
+    padding:10px 0px;
+}
+.areaMyAddrBox {
+    width: 100%;
+    margin: 0px 0 10px 0;
+    background: #fafafa;
+}
+
+.rdoFtBig {
+    font-size: 20px;
+    font-weight: normal;
+}
+.proBtn_write tbody td {
+    background: #f0f0f0;
+}
+
+.stock-font {
+    font-size: 14px;
+    border: 0px;
+    color: red;
+    background: transparent;
+    font-weight: bold;
+    width: 30px;
+}
+
+.services_header label:first-child{
+    width: 30%;
+    vertical-align: top;
+    padding-right: 5px;
+}
+
+.services_header label:nth-child(2){
+    width: 65%;
+}
+
+.services_header label{
+    font-size: 12px;
+}
+
+#dele th{
+    width: 120px;
+    background: #f3f0f0;
+}

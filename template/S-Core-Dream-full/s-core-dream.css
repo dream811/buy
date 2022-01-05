@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 's-core-dream-light';
+   src: url("SCDream3.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-regular';
+    src: url("SCDream4.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-medium';
+    src: url("SCDream5.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 's-core-dream-bold';
+    src: url("SCDream6.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+}

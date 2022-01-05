@@ -1,0 +1,101 @@
+.small-box h3{
+	font-size: 20px;
+}
+
+.myPageTab2 li {
+    width: 100%;
+    padding-bottom: 5px;
+    height: 26px;
+    line-height: 26px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.myPageTab2 .fr {
+    display: block;
+    min-width: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    background: #acacac;
+    border-radius: 20px;
+}
+.myPageTab2 a {
+    display: block;
+}
+.fr {
+    float: right;
+}
+.myPageTab2_child {
+    padding: 10px;
+    border: 1px solid #dbe4eb;
+    min-height: 225px;
+}
+.whGraBtn .txt {
+    font-size: 12px;
+    border: none;
+    cursor: pointer;
+    height: 26px;
+    line-height: 24px;
+    padding: 0px 7px;
+    margin: 0;
+    vertical-align: top;
+    letter-spacing: -1px;
+    background: #fff;
+    color: #188ae2;
+    border: 1px solid #188ae2;
+    border-radius: 3px;
+}
+.tInBox label {
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    width: 140px;
+    height: 20px;
+    line-height: 20px;
+}
+
+.tInBox .bBox {
+    display: inline-block;
+    border: 1px solid #ddd;
+    background: #fff;
+    margin-left: 5px;
+    height: 20px;
+    line-height: 20px;
+    width: 82%;
+    padding: 0px 5px;
+}
+
+ul.tInBox li {
+    width: 100%;
+    float: none;
+    margin: 4px 0px;
+    word-break: break-all;
+}
+
+.table .thead-dark th {
+    color: #fff;
+    background-color: #343a40;
+    border-color: #454d55;
+}
+.table tbody.table-light{
+    background: #fff;   
+}
+
+.table .thead-gray th {
+    color: #000;
+    background-color: #d2d6de;
+    border-color: #454d55;
+}
+
+.step_ul .selected span.fr{
+    background: #188ae2;
+}

@@ -1,0 +1,45 @@
+.carousel-indicators {
+    bottom: -10px;
+}
+.carousel-indicators li {
+    background-color: #fff;
+}
+
+.im-left, .im-right {
+    margin-top: -10px;
+    right: 10%;
+    position: absolute;
+    top: 50%;
+    z-index: 100;
+    display: inline-block;
+    width: 16px;
+}
+
+.im-right {
+    right: 10px;
+}
+
+.im-left {
+    left: 10px;
+}
+
+.theme-showcase .carousel-control {
+    top: 19px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: unset;
+}
+
+.fav-header{
+    position: absolute;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: calc(50% - 44px);
+    top: 18px;
+}
+
+section.best{
+    position: relative;
+}

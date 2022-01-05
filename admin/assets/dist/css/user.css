@@ -1,0 +1,304 @@
+.loginEx .tit0 span {
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.loginBox {
+    position: relative;
+    height: auto;
+    margin: 0;
+    padding: 20px 10px 33px 10px;
+    background: #f7f7f7;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.loginBox .loginBox-title {
+    font-size: 25px;
+    font-weight: bold;
+}
+.loginHelp li p:first-child {
+    padding-top: 0;
+}
+.loginHelp p span {
+    display: block;
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 400;
+    color: #666;
+}
+.loginHelp li p {
+    margin-bottom: 0;
+    padding-top: 30px;
+}
+.loginHelp p {
+    font-size: 15px;
+    font-weight: bold;
+}
+.loginHelp li {
+    padding: 40px 0 40px 30px;
+    border-top: 1px solid #ebebeb;
+    margin-left: 0;
+}
+
+.step_txt {
+    color: #aaa;
+}
+
+.step {
+    overflow: hidden;
+    margin-bottom: 22px;
+    padding-bottom: 10px;
+}
+
+.agree_tit {
+    margin: 25px 0 12px;
+}
+.agree_box {
+    height: 233px;
+    padding: 10px;
+    border: 1px solid #eee;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    letter-spacing: -0.02em;
+    line-height: 140%;
+}
+
+.register_form{display: none;}
+
+}
+.info-bank {
+    height: 50px;
+    border: 5px solid #36F;
+}
+
+.info-bank span {
+    display: block;
+    color: #fbfbfb;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    background: #333;
+}
+.ft_15 {
+    font-size: 15px;
+}
+.bscBox {
+    border: 1px solid #e1e1e1;
+    background-color: #f8f8f8;
+    padding: 15px;
+    font: bold 14px/120% 나눔고딕, naumgothic;
+    color: #06C;
+}
+
+.last_svc2_box {
+    margin: 0 0 0 0;
+    padding: 10px;
+    width: 200px;
+}
+.last_svc2_box .last_mny {
+    text-align: right;
+    color: #ed1c24;
+    font-size: 26px;
+    font-family: tahoma;
+}
+.cp_box {
+    height: 172px;
+    padding: 18px 15px 0 5px;
+    background-color: #f4f4f4;
+}
+.cp_num {
+    margin-top: 16px;
+    padding: 23px 0 23px 13px;
+    border: 1px dashed #898989;
+}
+.cp_num input {
+    width: 69px;
+}
+
+.board_view_head {
+    overflow: hidden;
+    padding: 10px 17px 10px 12px;
+    color: #636363;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #c5c5c5;
+}
+.board_view_head ul > li {
+    float: left;
+    padding: 0 12px;
+    font-size: 11px;
+}
+.comment-wrapper .panel-body {
+    max-height:650px;
+    overflow:auto;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+
+.board_list tbody td {
+    padding: 10px 5px;
+    text-align: left;
+    color: #313131;
+    border-bottom: 1px solid #dbdbdb;
+    letter-spacing: -0.05em;
+}
+table, table th, table td {
+    border-collapse: collapse;
+    border-spacing: 0;
+    font-family: "Nanum Gothic", Nanum Gothic, Dotum;
+}
+
+table {
+    width: 100%;
+}
+.board_list thead th {
+    padding: 10px 5px;
+    text-align: left;
+    line-height: 12px;
+}
+.board_list thead th {
+    color: #636363;
+    font-weight: bold;
+    border-top: 1px solid #979797;
+    border-bottom: 1px solid #c5c5c5;
+    background: #fafafa;
+    line-height: 110%;
+}
+#pop_wrap h1 {
+    margin-bottom: 25px;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: "Nanum Gothic",Nanum Gothic;
+    text-align: center;
+}
+body, th, td, p, li, dt, dd, input, textarea, select, button {
+    color: #444;
+    font-family: "Nanum Gothic", Nanum Gothic, Dotum;
+    font-size: 12px;
+}
+legend, caption {
+    overflow: hidden;
+    left: 0;
+    top: -5000px;
+    width: 0;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    display: none;
+}
+.style_top_3 {
+    margin: 37px 0;
+    text-align: center;
+}
+
+.userPage h2 {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 14px;
+}
+
+.userPage .txtBox {
+    background: #f1f1f1;
+    border: 1px solid #d8d8d8;
+    padding: 15px;
+}
+.userPage table thead th {
+    background: #777;
+    font-weight: bold;
+    color: #fff;
+}
+.userPage table td, .userPage table th {
+    border: 1px solid #d8d8d8;
+    padding: 10px;
+    line-height: 20px;
+}
+
+.userPage table tbody th {
+    font-weight: bold;
+    background: #f1f1f1;
+}
+.board_write tbody th {
+    padding: 10px 0;
+    text-align: center;
+    color: #707070;
+    border-right: 1px solid #e2e2e2;
+    background-color: #f0f0f0;
+    letter-spacing: -0.05em;
+}
+.board_write tbody td {
+    padding: 5px 8px;
+}
+.bold {
+    font-weight: bold;
+}
+.addrTel li {
+    padding: 5px 0;
+}
+
+.vm_box {
+    line-height: 180% !important;
+}
+
+.adr {
+    width: 70%;
+}
+.board_write tbody th, .board_write tbody td {
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.orderTit h3 {
+    font-family: "Nanum Gothic", Nanum Gothic, Dotum;
+    font-size: 20px;
+    text-align: left;
+    color: #fff;
+    margin: 6px 0 0 10px;
+}
+
+.orderTit {
+    position: relative;
+    height: 35px;
+    background: #717c82;
+    border: 1px solid #717c82;
+    padding: 5px 0px;
+}
+.myl{
+    padding: 11px;
+    background-color: #f0f0f0
+}
+
+.myl_nocolor{
+    padding: 11px;
+}
+
+.titSub {
+    font-size: 13px;
+    font-weight: bold;
+    color: #005ba1;
+    padding: 5px 0 5px 13px;
+}
+.pop-title {
+    height: 40px;
+    line-height: 40px;
+    background: #0066CC;
+    color: #FFF;
+    border-bottom: 1px solid #00488f;
+}
+
+.pop-title h3 {
+    margin-left: 10px;
+    font-size: 14px;
+    font-family: "Nanum Gothic", Nanum Gothic;
+    padding-left: 20px;
+    color:#fff;
+    font-weight: 600;
+    padding-top: 10px
+}

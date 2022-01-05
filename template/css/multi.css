@@ -1,0 +1,16 @@
+.multi .panel-heading{
+	background-color: #82cbc4
+}
+
+.multi .panel-heading{
+	background-color: #82cbc4
+}
+
+.panel{
+	box-shadow : none;
+	border : none;
+}
+
+.panel-primary>.panel-heading{
+	border : none;
+}

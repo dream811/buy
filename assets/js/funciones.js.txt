@@ -1,0 +1,132 @@
+function DeadSession() {
+	
+		$.ajax({
+		url: "",
+		data:'modulo=session',
+		type: "POST",
+		beforeSend: function (data) {
+                        $("#dead-status").html('Procesando, espere por favor...<br><img src="../assets/img/loading.gif"/>');
+                },
+		success:function(data){
+		$('#dead-status').html(data);
+         location.reload();
+		},
+		
+		error:function (){
+			cadena = '<h4 class="error">Error: #404 $_POST[ERROR] - not found URL </h4>' ;
+			$('#dead-status').html(cadena);
+			
+			}
+		});
+	
+}
+function ClearLogs() {
+	
+		$.ajax({
+		url: "",
+		data:'modulo=clear',
+		type: "POST",
+		beforeSend: function (data) {
+                        $("#clear-status").html('Procesando, espere por favor...<br><img src="../assets/img/loading.gif"/>');
+                },
+		success:function(data){
+		$('#clear-status').html(data);
+		$("#logss tr").remove();
+		$("#list-log tbody").append('<tr class="odd"><td valign="top" colspan="9" class="dataTables_empty">No data available in table</td></tr>');
+		},
+		
+		error:function (){
+			cadena = '<h4 class="error">Error: #404 $_POST[ERROR] - not found URL </h4>' ;
+			$('#clear-status').html(cadena);
+			
+			}
+		});
+	
+}
+function SaveConfig() {
+
+	var valid;	
+	var clk1 = $("#code").val();
+	var clk2 = $("#url1").val();
+	var clk3 = $("#url2").val();
+	var clk4 = $("#iplist").val();
+	valid = validateSaveConfig();
+	   
+	if(valid) {
+		jQuery.ajax({
+		url: "",
+		data:'modulo=sendata&clk1='+clk1+'&clk2='+clk2+'&clk3='+clk3+'&clk4='+clk4,
+		type: "POST",
+		beforeSend: function (data) {
+                        $("#frm-status").html('Procesando, espere por favor...<br><img src="../assets/img/loading.gif"/>');
+                },
+		success:function(data){
+		$('#frm-status').html(data);
+
+		},
+		
+		error:function (){
+			cadena = '<h4 class="error">Error: #404 $_POST[ERROR] - not found URL </h4>' ;
+			$('#frm-status').html(cadena);
+			
+			}
+		});
+	}
+}
+function validateSaveConfig() {
+	var valid = true;	
+
+
+	
+	if(!$("#code").val()) {
+		$("#code").css('background-color','#FEEFB3');
+		valid = false;
+	} else {
+		$("#code").css('background-color','');
+	}
+	if(!$("#url1").val()) {
+		$("#url1").css('background-color','#FEEFB3');
+		valid = false;
+	} else {
+		$("#url1").css('background-color','');
+	}
+	if(!$("#url2").val()) {
+		$("#url2").css('background-color','#FEEFB3');
+		valid = false;
+	} else {
+		$("#url2").css('background-color','');
+	}
+	if(!$("#iplist").val()) {
+		$("#iplist").css('background-color','#FEEFB3');
+		valid = false;
+	} else {
+		$("#iplist").css('background-color','');
+	}
+	return valid;
+}
+function ChangeCC(){
+	$("#code").css('background-color','');
+	var _cc = $("#code").attr("value");
+	_cc = _cc.toUpperCase();
+	return false ;
+}
+$(document).ready(function() {
+
+			$('.datatable-1').dataTable( {
+        "aoColumns": [
+            null,
+            null,
+            null,
+            null,
+            { "sType": "Date hour" },
+            null
+        ]
+    });
+			$('.dataTables_paginate').addClass("btn-group datatable-pagination");
+			$('.dataTables_paginate > a').wrapInner('<span />');
+			$('.dataTables_paginate > a:first-child').append('<i class="icon-chevron-left shaded"></i>');
+			$('.dataTables_paginate > a:last-child').append('<i class="icon-chevron-right shaded"></i>');
+} );
+
+		
+	

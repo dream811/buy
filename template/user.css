@@ -1,0 +1,13 @@
+.loginEx .tit0 span {
+    font-size: 32px;
+    font-weight: bold;
+}
+.loginEx .tit0 {
+    font-size: 15px;
+}
+
+.loginEx {
+    text-align: center;
+    border-bottom: 1px solid #dbdbdb;
+    padding: 20px 0 30px;
+}

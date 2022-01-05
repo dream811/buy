@@ -1,0 +1,474 @@
+
+
+.quantity .increase,.quantity .decrease{
+    height: 30px;
+    line-height: 30px;
+    background: url(/assets/images/img_quantity-box.png) no-repeat;
+    background-size: 30px auto;
+    border: none;
+    position: absolute;
+
+}
+
+.quantity .increase {
+
+    width: 30px;
+    background-position: 0 -100px;
+    text-indent: -999em;
+    right: -30px;
+}
+
+.quantity .decrease {
+
+    width: 30px;
+    background-position: 0 -50px;
+    text-indent: -999em;
+    left: -30px
+}
+
+.updown_input{
+    height: 30px;
+    line-height: 30px;
+    width: 49px;
+    text-align: center;
+    font-size: 15px;
+    border: #d3d1d1 1px solid;
+}
+
+.quantity{
+    position: relative;
+    margin-left: 30px;
+}
+
+.c-detail__total {
+    position: relative;
+}
+
+.c-detail__total span:nth-child(1) {
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.c-detail__total span {
+    color: #48b389;
+}
+
+.c-detail__total span, .c-detail__total strong {
+    display: block;
+    text-align: right;
+}
+
+.c-detail__total span:nth-child(1)::before {
+    content: "총 ";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.c-detail__total span:nth-child(1)::after {
+    content: "개";
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.c-detail__total :last-child {
+    color: #e82b7b;
+    font-size: 16px
+}
+
+em, i {
+    font-style: normal;
+}
+.c-detail__total strong {
+    color: #3c87c7;
+    margin: 10px 0;
+    font-size: 24px !important;
+}
+
+.c-detail{
+    border-bottom: 2px dashed #cbcfd9;
+    margin-bottom: 20px;
+}
+.product_top {
+    position: relative;
+    clear: both;
+}
+
+.tit, .live-rating {
+    vertical-align: top;
+}
+
+#buy-button {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 1004;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background: #eee;
+    box-shadow: 0 1px #fff inset;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-transform: translate(0,0);
+}
+
+.footer-parts {
+    margin-bottom: 60px;
+}
+
+.pdpButtonArea .sold-out {
+    width: 96%;
+    margin: 0 auto;
+    line-height: 45px;
+    border: 1px solid #adaeaf;
+    background: #bbb;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.related-img{
+    width: 100%;
+    height: 100px !important;
+    object-fit: cover;
+}
+
+.navigation {
+    width: 100%;
+    background-color: white;
+}
+
+.navigation ul li {
+    display: inline-block;
+    text-align: center;
+    width: 25%;
+    color: #555;
+    font-weight: bold;
+    font-size: 13px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {
+    border: none;
+    border-bottom: solid #e55;
+}
+
+
+
+.list_area {
+    border-top: 2px solid #919191;
+}
+
+.cm_shop_inner .top_area {
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.product_detail .detail_box .detail_guide .hit {
+    font-weight: 600;
+    color: #ff6600;
+}
+
+.product_detail .detail_box .detail_guide .stitle {
+    font-size: 13px;
+    font-weight: 600;
+    color: #333;
+    margin: 15px 0;
+}
+
+.tab-panes {
+    margin-bottom: 40px;
+}
+
+.tab-panes:last-child {
+    margin-bottom: 20px;
+}
+
+.product-split{
+    background: #ddd;
+    height: 15px;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.nav>li>a{
+    padding: 15px 7px;
+    height: 58px;
+}
+
+.details img{
+    width: 100%
+}
+
+#myTab.sticky{
+    position: fixed;
+    top: 146px;
+    left: 0;
+    right: 0;
+    z-index: 18;
+    background: #fff
+}
+
+.cm_shop_inner .list_area li {
+    list-style: none;
+    border-bottom: 1px solid #dedede;
+    position: relative;
+}
+
+.cm_shop_inner .list_area .post_box {
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.list_area .post_box {
+    overflow: hidden;
+    padding: 8px 0;
+}
+
+.list_area .title {
+    color: #666;
+    line-height: 23px;
+    height: 22px;
+    margin-top: 1px;
+}
+
+.list_area .open_box {
+    padding: 20px 30px;
+    border-top: 1px dashed #dedede;
+    background: #f8f8f8;
+    display: none;
+}
+
+
+.list_area .conts_txt {
+    line-height: 18px;
+    overflow: hidden;
+}
+
+
+.list_area .conts_txt dt {
+    margin-bottom: 5px;
+    color: #333;
+    font-weight: 600;
+    font-size: 13px;
+}
+
+.open .open_box {
+    display: block;
+}
+
+.cm_shop_inner .open .title {
+    font-weight: 600;
+    color: #000;
+}
+
+.texticon_pack span {
+    display: inline-block;
+    line-height: 23px;
+    line-height: 24px\0 !important;
+    height: 22px;
+    padding: 0 12px 0 12px;
+    margin: 0;
+    cursor: default;
+    overflow: hidden;
+    border-radius: 60px;
+    font-weight: 400;
+    color: #fff !important;
+    font-size: 12px;
+}
+
+.texticon_pack .red {
+    background: #ff365c !important;
+}
+
+.texticon_pack .dark {
+    background: #474747 !important;
+    letter-spacing: 0px;
+}
+
+.input_file_box .realFile {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 100%;
+    font-size: 200px;
+    height: 100%;
+    cursor: pointer !important;
+    opacity: 0;
+    filter: alpha(opacity=0);
+    -ms-filter: "alpha(opacity=0)";
+    -khtml-opacity: 0;
+    -moz-opacity: 0;
+}
+
+.input_file_box .buttonImg {
+    background: #ddd;
+    color: #333;
+    border: 0;
+    font-weight: 600;
+}
+
+.fileDiv{
+    position: relative;
+}
+
+.reply {
+    padding: 20px 30px 15px 55px;
+    overflow: hidden;
+    text-align: left;
+    border: 1px dashed #dadada;
+    background: #fff url(/assets/images/ic_faq_a.gif) 20px 18px no-repeat;
+}
+
+.reply .admin {
+    display: block;
+    color: #ff6600;
+    margin-bottom: 5px;
+    overflow: hidden;
+}
+
+.reply .admin .name {
+    font-weight: 600;
+    color: #ff6600;
+    float: left;
+}
+
+.reply .admin .bar {
+    background: #ccc;
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 4px 10px 0 10px;
+}
+
+.reply .admin .date {
+    color: #333;
+    font-family: calibri;
+    font-size: 15px;
+    letter-spacing: 0px;
+    float: left;
+}
+
+.list_area .writer {
+    float: right;
+    margin-right: 5px;
+    height: 24px;
+    line-height: 26px;
+    line-height: 28px\0;
+    background: transparent url(/assets/images/inner_writer.png) 3px center no-repeat;
+    padding-left: 22px;
+    overflow: hidden;
+}
+
+.cm_shop_inner .list_area .writer .date {
+    color: #999;
+    font-family: calibri;
+    font-size: 15px;
+    letter-spacing: 0px;
+    float: left;
+    line-height: 1.1\0;
+    padding-top: 5px\0;
+}   
+
+.list_area .writer .bar {
+    background: #ccc;
+    float: left;
+    width: 1px;
+    height: 10px;
+    margin: 8px 10px 0 10px;
+}
+
+.list_area .writer .name {
+    font-weight: 600;
+    color: #333;
+    letter-spacing: 0px;
+    float: left;
+    line-height: 1.1\0;
+    padding-top: 5px\0;
+}
+
+.c_product_btn_pick span {
+    background-image: url(/assets/images/sp_icon_2x_20201123_161301.png);
+    width: 24px;
+    height: 24px;
+    background-size: 439px 403px;
+    display: block;
+    margin-left: -1px;
+    margin-top: 2px;
+}
+
+.c_product_btn_share span {
+    background-image: url(/assets/images/sp_icon_2x_20201123_161301.png);
+    background-position: -87px -379px;
+    width: 24px;
+    height: 24px;
+    background-size: 439px 403px;
+    display: block;
+    margin-left: -1px;
+    margin-top: 2px;
+}
+.likes_product {
+    position: absolute;
+    right: 0;
+    top: -4px;
+}
+
+.c_product_btn_pick, .c_product_btn_share {
+    overflow: hidden;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 50%;
+    background-color: #fff !important;
+}
+
+.if_wish span {
+    background-position: -390px -348px;
+}
+
+.not_if_wish span {
+    background-position: -390px -319px;
+}
+
+.shared_buttons {
+    position: absolute;
+    right: 0;
+    top: 55px;
+    border: 1px solid #cdcdcd;
+    background: #fff;
+    z-index: 1000;
+    width: 100%;
+}
+
+.disabled_btns {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#kakao-link-btn {
+    background: #fdcc14;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    padding-right: 10px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.sociallink {
+    display: inline-block;
+}
+
+#twitter-widget-0, .fb-share-button {
+    vertical-align: top;
+}
+
+.stitle{
+    height: 44px;
+}

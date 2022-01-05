@@ -1,0 +1,85 @@
+.cm_mypage_wish {
+    overflow: hidden;
+    border-top: 1px solid #eee;
+}
+.cm_mypage_wish ul {
+    overflow: hidden;
+    text-align: left;
+}
+
+.cm_mypage_wish li {
+    float: left;
+    width: 25%;
+    padding: 25px 0;
+    list-style: none;
+}
+.cm_mypage_wish .wish_box {
+    margin: 0 15px;
+    min-height: 250px;
+    position: relative;
+}
+
+.cm_mypage_wish .wish_box .thumb {
+    overflow: hidden;
+    display: block;
+}
+
+.cm_mypage_wish .wish_box .thumb img {
+    width: 100%;
+    float: left;
+}
+
+.cm_layout .common_page img {
+    max-width: 100%;
+}
+
+.cm_mypage_wish .wish_box dd {
+    position: relative;
+    overflow: hidden;
+    border-top: 1px solid #eee;
+    text-overflow: ellipsis;
+}
+
+.cm_mypage_wish .wish_box .title {
+    margin: 10px 0;
+    height: 23px;
+    overflow: hidden;
+    color: #666;
+    display: block;
+}
+.cm_mypage_wish .price {
+    color: #999;
+    position: relative;
+    line-height: 45px;
+    overflow: hidden;
+    color: #ff6600;
+    letter-spacing: 0px;
+    font-weight: 600;
+    float: left;
+    font-size: 13px;
+}
+.cm_mypage_wish label {
+    position: absolute;
+    right: 65px;
+    bottom: 0;
+    top: 10px
+}
+
+.cm_mypage_wish .button_pack {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 5px
+}
+
+.button_pack a.btn_sm_white {
+    height: 23px;
+}
+.button_pack .btn_sm_white, .button_pack .btn_sm_black, .button_pack .btn_sm_color {
+    font-size: 12px;
+}
+.cm_mypage_wish .wish_box {
+    margin: 0 15px;
+    min-height: 250px;
+    position: relative;
+}
