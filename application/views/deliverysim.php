@@ -292,7 +292,7 @@ else $page_label = '배송';
 									</p>
 									<h4>상품 정보를 입력해 주세요</h4>
 								</div>
-                                <?php  $no = 1;  ?>
+                                <?php  $no = 1;  $prdTotalCnt=0; $prdTotalPrice = 0; ?>
                                 <?php foreach($orderInfos as $orderInfo): ?>
 
                                     <div id="TextProduct1" class="clrBoth pro_p">
@@ -415,11 +415,15 @@ else $page_label = '배송';
                                                                 정확한 작성을 해주셔야 통관지연을 막을수 있습니다.
                                                             </div>
                                                         </div>
+                                                        <?php
+                                                        $prdTotalCnt += $orderInfo['nShippingCount'];
+                                                        $prdTotalPrice += $orderInfo['product_item']['nSubItemBasePrice']*$orderInfo['nShippingCount'];
+                                                        ?>
                                                         <div class="row my-10">
                                                             <label class="col-sm-2 pt-10">* 단가</label>
                                                             <div class="col-md-4 p-right-15">
                                                                 단가
-                                                                <input type="text" value="<?=$orderInfo['product_item']['nSubItemSellPrice']?>" class="input_txt2 per20 form-control-custom COST"
+                                                                <input type="text" value="<?=number_format($orderInfo['product_item']['nSubItemBasePrice'], 2)?>" class="input_txt2 per20 form-control-custom COST"
                                                                        name="COST"  maxlength="10" value="0" title="단가" required
                                                                        onblur="fnNumChiper(this, '2');fnTotalProPrice();">
                                                             </div>
@@ -486,8 +490,8 @@ else $page_label = '배송';
 											<tr> 
 												<td rowspan="3">
 													<ul class="proTtAmt">
-														<li><span class="fl">총 수량</span> <span class="fr"><span id="TextTotalProCNT" class="proTtQtyTxt">1 개</span></span> </li>
-														<li><span class="fl">총 금액</span>  <span class="fr">￥<span id="TextTotalAmt" class="proTtAmtTxt">0.00</span></span> </li>
+														<li><span class="fl">총 수량</span> <span class="fr"><span id="TextTotalProCNT" class="proTtQtyTxt"><?=$prdTotalCnt?> 개</span></span> </li>
+														<li><span class="fl">총 금액</span>  <span class="fr">￥<span id="TextTotalAmt" class="proTtAmtTxt"><?=number_format($prdTotalPrice, 2)?></span></span> </li>
 														<li style="height:auto;"><h3><span class="proTtBtmTxt">* 세관에 신고되는 금액 입니다 (쇼핑몰 결제 금액과 동일)<br>
 														* 총 금액이 150달러를 넘을 경우 일반통관으로 진행되며 수수료 3,300원이 추가 부과됩니다.</span>
 														</h3>
@@ -625,5 +629,5 @@ else $page_label = '배송';
 	var userName = "<?=$this->session->userdata('fname')?>";
 	var options = "<?=$options?>";
 </script>
-<script type="text/javascript" src="/template/js/delivery.js?"></script>
-<script type="text/javascript" src="/template/js/new_delivery.js?<?=time()?>"></script>
+<script type="text/javascript" src="/template/js/delivery.js?" defer></script>
+<script type="text/javascript" src="/template/js/new_delivery.js?<?=time()?>" defer></script>

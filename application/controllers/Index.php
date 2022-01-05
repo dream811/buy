@@ -188,7 +188,6 @@ class Index extends BaseController {
         $decoded_json = json_decode($result, true);
         if($decoded_json['status'] == 'success'){
             $data['orderInfos'] = $decoded_json['data'];
-            print_r($data['orderInfos']);
         }else{
 
             $data['orderInfo'] = [];
