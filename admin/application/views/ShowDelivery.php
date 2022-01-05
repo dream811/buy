@@ -239,7 +239,7 @@ else
 			                                       <tr>
 			                                          <th>상품명 영문/중문 (품목)</th>
 			                                          <td class="lht_150"><a href="<?=$value->url?>" target="_blank">
-			                                          	<span class="bold" ><?=$value->productName?>/<?=!empty($value->chn_subject) ? $value->chn_subject : ""?>/<?=!empty($value->kr_subject) ? $value->kr_subject : ""?></p></a></td>
+			                                          	<span class="bold" ><?=$value->productName?>/<?=!empty($value->chn_subject) ? $value->chn_subject : ""?>/<?=!empty($value->kr_subject) ? $value->kr_subject : ""?></span></a></td>
 			                                       </tr>
 			                                       <tr>
 			                                          <th>옵션</th>
@@ -281,7 +281,7 @@ else
 			                        <tbody>
 			                           <tr>
 			                              <th>중국 내 배송비</th>
-			                              <td>¥<?=!empty($delivery[0]->cur_send) ? $delivery[0]->cur_send:"0.00"?></p>
+			                              <td>¥<?=!empty($delivery[0]->cur_send) ? $delivery[0]->cur_send:"0.00"?></td>
 			                              <th>총 수량 / 상품 총액</th>
 			                              <td><span class="ft_15 bold text-primary"><?=$delivery[0]->ProCount?></span> / <span class="ft_15 bold text-danger">￥<?=number_format($delivery[0]->ProSum)?></span></td>
 			                           </tr>

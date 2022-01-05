@@ -145,7 +145,7 @@ else $page_label = '배송';
 												<td colspan="3">
 													<div class="row">
 														<div class="col-md-6 p-right-0">
-															한글 <input type="text" name="ADRS_KR" id="ADRS_KR" maxlength="60" 
+															한글 <input value="<?= $orderInfos[0]['order']['strReceiverName'] ?>" type="text" name="ADRS_KR" id="ADRS_KR" maxlength="60"
 															class="ipt_type1 w-80 input_txt2" required>
 														</div>
 														<div class="col-md-6 p-left-0">
@@ -156,7 +156,7 @@ else $page_label = '배송';
 													</div>
 													<div class="row my-10">
 														<div class="col-md-6 p-right-0">
-															영문 <input type="text" name="ADRS_EN" id="ADRS_EN" maxlength="60" 
+															영문 <input value="<?= $orderInfos[0]['order']['strReceiverName'] ?>" type="text" name="ADRS_EN" id="ADRS_EN" maxlength="60"
 															class="ipt_type1 w-80 input_txt2" required>
 														</div>												
 													</div>
@@ -197,7 +197,7 @@ else $page_label = '배송';
 													<div class="row my-10">
 														<label class="col-sm-2 pt-10">우편번호</label> 
 														<div class="col-sm-10">
-															<input type="text" name="ZIP" id="ZIP" maxlength="8" class="input_txt2 form-control" value="" required readonly>
+															<input type="text" value="<?= $orderInfos[0]['order']['strPostCode'] ?>"  name="ZIP" id="ZIP" maxlength="8" class="input_txt2 form-control" value="" required readonly>
 															<a class="btn btn-sm btn-warning btn-round" style="margin-top: 10px;" href="javascript:openDaumPostcode();">
 																<span>우편번호 검색</span>
 															</a>
@@ -206,7 +206,7 @@ else $page_label = '배송';
 													<div class="row my-10">
 														<label class="col-sm-2 pt-10">주소</label>
 														<div class="col-sm-10">
-															<input type="text" name="ADDR_1" id="ADDR_1" maxlength="100" class="input_txt2 adr form-control" value="" required readonly>
+															<input type="text" value="<?= $orderInfos[0]['order']['strReceiverAddr1'] ?>" name="ADDR_1" id="ADDR_1" maxlength="100" class="input_txt2 adr form-control" value="" required readonly>
 														</div>
 													</div>
 													<input type="hidden" name="ADDR_1_EN" id="ADDR_1_EN" value="">
@@ -214,7 +214,7 @@ else $page_label = '배송';
 													<div class="row my-10">
 														<label class="col-sm-2 pt-10">상세주소</label>
 														<div class="col-sm-10">
-															<input type="text" name="ADDR_2" id="ADDR_2" maxlength="100" class="input_txt2 adr form-control " value="">
+															<input type="text" value="<?= $orderInfos[0]['order']['strReceiverAddr2'] ?>" name="ADDR_2" id="ADDR_2" maxlength="100" class="input_txt2 adr form-control " value="">
 														</div>
 													</div>
 													<div class="row">
@@ -238,7 +238,7 @@ else $page_label = '배송';
 													    </select>
 													</div>
 													<div class="form-group">
-														<input  type="text" name="REQ_1" id="REQ_1" maxlength="100" class="input_txt2 full form-control" value="">
+														<input  type="text" value="<?= $orderInfos[0]['order']['strParcelPrintMessage'] ?>" name="REQ_1" id="REQ_1" maxlength="100" class="input_txt2 full form-control" value="">
 														<p class="pt-10">* 국내 배송기사 분께 전달하고자 하는 요청사항을 남겨주세요(예: 부재 시 휴대폰으로 연락주세요.)</p>
 													</div>
 												</td>
@@ -247,7 +247,7 @@ else $page_label = '배송';
 									</table>
 								</div>
 							</div>
-							<input type="hidden" name="sProNum" id="sProNum" value="<?=count($orderInfo)?>" readonly="">
+							<input type="hidden" name="sProNum" id="sProNum" value="<?=count($orderInfos)?>" readonly="">
 							<div class="step_box">
 								<p class="clrBoth pHt30"></p>
 								<div class="row">
@@ -293,7 +293,7 @@ else $page_label = '배송';
 									<h4>상품 정보를 입력해 주세요</h4>
 								</div>
                                 <?php  $no = 1;  ?>
-                                <?php foreach($orderInfo as $value): ?>
+                                <?php foreach($orderInfos as $orderInfo): ?>
 
                                     <div id="TextProduct1" class="clrBoth pro_p">
                                         <input type="hidden" name="ARV_STAT_CD" id="ARV_STAT_CD" value="1">
@@ -362,7 +362,7 @@ else $page_label = '배송';
                                                             <div class="row">
                                                                 <div class="col-md-6">
                                                                     <input type="text" class="input_txt2 per40 form-control" name="SHOP_ORD_NO"
-                                                                           id="SHOP_ORD_NO" maxlength="40" value="">
+                                                                           id="SHOP_ORD_NO" maxlength="40" value="<?=$orderInfo['order']['strOrdererNumber']?>">
                                                                 </div>
                                                             </div>
                                                         </td>
@@ -406,7 +406,7 @@ else $page_label = '배송';
                                                         <div class="row my-10">
                                                             <label class="col-sm-2 pt-10">* 상품명</label>
                                                             <div class="col-md-4">
-                                                                <input type="text" class="input_txt2 per40 form-control en_product_name" name="PRO_NM" id="PRO_NM" maxlength="200"  title="상품명" required onblur="javascript:fnValKeyRep( /[^a-zA-z0-9 \,\.\-]/g, this );" placeholder="영문">
+                                                                <input type="text" value="<?=$orderInfo['strVendorItemPackageName']."---".$orderInfo['product_item']['strSubItemName']?>" class="input_txt2 per40 form-control en_product_name" name="PRO_NM" id="PRO_NM" maxlength="200"  title="상품명" required onblur="javascript:fnValKeyRep( /[^a-zA-z0-9 \,\.\-]/g, this );" placeholder="영문">
                                                             </div>
                                                         </div>
                                                         <div class="row">
@@ -419,13 +419,13 @@ else $page_label = '배송';
                                                             <label class="col-sm-2 pt-10">* 단가</label>
                                                             <div class="col-md-4 p-right-15">
                                                                 단가
-                                                                <input type="text" class="input_txt2 per20 form-control-custom COST"
+                                                                <input type="text" value="<?=$orderInfo['product_item']['nSubItemSellPrice']?>" class="input_txt2 per20 form-control-custom COST"
                                                                        name="COST"  maxlength="10" value="0" title="단가" required
                                                                        onblur="fnNumChiper(this, '2');fnTotalProPrice();">
                                                             </div>
                                                             <div class="col-md-4">
                                                                 수량&nbsp;&nbsp;&nbsp;&nbsp;
-                                                                <input type="text" class="input_txt2 per20 form-control-custom QTY"
+                                                                <input type="text" value="<?=$orderInfo['nShippingCount']?>" class="input_txt2 per20 form-control-custom QTY"
                                                                        name="QTY"  maxlength="5" value="1" title="수량" required
                                                                        onblur="fnNumChiper(this, '0');fnTotalProPrice();">
                                                             </div>
@@ -434,19 +434,19 @@ else $page_label = '배송';
                                                             <label class="col-sm-2 pt-10">* 옵션</label>
                                                             <div class="col-md-4 p-right-15">
                                                                 색상
-                                                                <input type="text" class="input_txt2 per20 form-control-custom" name="CLR"
+                                                                <input type="text" value="<?=$orderInfo['product_item']['strSubItemKoOptionPattern0']?>" class="input_txt2 per20 form-control-custom" name="CLR"
                                                                        id="CLR" maxlength="100"  title="색상(영문)">
                                                             </div>
                                                             <div class="col-md-4">
                                                                 사이즈
-                                                                <input type="text" class="input_txt2 per20 form-control-custom" name="SZ"
+                                                                <input type="text" value="<?=$orderInfo['product_item']['strSubItemKoOptionPattern1']?>" class="input_txt2 per20 form-control-custom" name="SZ"
                                                                        id="SZ" maxlength="80"  title="사이즈">
                                                             </div>
                                                         </div>
                                                         <div class="row my-10">
                                                             <label class="col-sm-2 pt-10">* 상품URL</label>
                                                             <div class="col-sm-10">
-                                                                <input type="text" class="input_txt2 full form-control" name="PRO_URL"
+                                                                <input type="text" value="<?=$orderInfo['strProductUrl']?>" class="input_txt2 full form-control" name="PRO_URL"
                                                                        id="PRO_URL" maxlength="500"  title="상품URL">
                                                             </div>
                                                         </div>
@@ -459,7 +459,7 @@ else $page_label = '배송';
                                                         <div class="row my-10">
                                                             <label class="col-sm-2 pt-10 fs-12">* 이미지URL	</label>
                                                             <div class="col-sm-10">
-                                                                <input type="text" class="input_txt2 full form-control" name="IMG_URL"
+                                                                <input value="<?=$orderInfo['product_item']['strSubItemImage']?>" type="text" class="input_txt2 full form-control" name="IMG_URL"
                                                                        id="IMG_URL" maxlength="500">
                                                             </div>
                                                         </div>
