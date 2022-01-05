@@ -614,9 +614,17 @@ class Index extends BaseController {
                     "time" => date("H"),
                     "created_date" => date("Y-m-d"),
                     "region" => iptocountry(get_client_ip())));
+                if($options == "deliveryAgency"){
+                    //배송대행접수대기 가야 한다
+                    redirect('/mypage?step=1');
+                }else if($options == "buyAgency"){
+                    //구매대행구매견적 가야 한다
+                    redirect('/mypage?step=4');
+                }else{
+                    //구매대행 혹은 배송대행으로 가야 한다
+                    redirect('/deliverySim?options='.$options.'&orderIds='.$orderIds);
+                }
 
-                //구매대행 혹은 배송대행으로 가야 한다
-                redirect('/deliverySim?options='.$options.'&orderIds='.$orderIds);
                 $this->session->set_userdata('actual_link', "");
             }
         }else{//등록
@@ -787,8 +795,16 @@ class Index extends BaseController {
                 "created_date" => date("Y-m-d"),
                 "region" => iptocountry(get_client_ip())));
 
-            //구매대행 혹은 배송대행으로 가야 한다
-            redirect('/deliverySim?options='.$options.'&orderIds='.$orderIds);
+            if($options == "deliveryAgency"){
+                //배송대행접수대기 가야 한다
+                redirect('/mypage?step=1');
+            }else if($options == "buyAgency"){
+                //구매대행구매견적 가야 한다
+                redirect('/mypage?step=4');
+            }else{
+                //구매대행 혹은 배송대행으로 가야 한다
+                redirect('/deliverySim?options='.$options.'&orderIds='.$orderIds);
+            }
         }
     }
 
