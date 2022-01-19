@@ -187,7 +187,11 @@ class Index extends BaseController {
         curl_close($curl);
         $decoded_json = json_decode($result, true);
         if($decoded_json['status'] == 'success'){
-            $data['orderInfos'] = $decoded_json['data'];
+                $data['orderInfos'] = $decoded_json['data'];
+                $mob_no = explode("-", $data['orderInfos']['strOrdererSafeNumber']);
+                $data['MOB_NO1'] = $mob_no[0];
+                $data['MOB_NO2'] = $mob_no[1] ?? "";
+                $data['MOB_NO3'] = $mob_no[2] ?? "";
         }else{
 
             $data['orderInfo'] = [];

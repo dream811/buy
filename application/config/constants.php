@@ -74,3 +74,5 @@ define("cRYPT",array(
 define("SHOP_URLS" ,array( "shopping","shop_products","mybasket","makeorder","service_eval_list","wish_list","taoshopping"));
 
 define("FAVOR_URL" ,array( "best","rec","new","low","wow"));
+
+define("SCRAP_URL", "http://localhost:8080");

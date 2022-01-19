@@ -12,7 +12,8 @@
    </div>
    <div id="pop_wrap">
       <form method="post" class="boardSearchForm" name="frmIvcNo" id="frmIvcNo">
-         <input type="hidden" name="ORD_SEQ" id="ORD_SEQ" value="<?=$sOrdSeq?>">
+          <input type="hidden" name="ORD_SEQ" id="ORD_SEQ" value="<?=$sOrdSeq?>">
+          <input type="hidden" name="simbongsa_ord_id" id="simbongsa_ord_id" value="<?=$track[0]->simbongsa_ord_id?>">
          <div>
             <table class="order_write order_table_top">
                <colgroup>
@@ -23,6 +24,17 @@
                   <tr>
                      <th>출고일자</th>
                      <td><input type="date" name="out_date" id="out_date" class="form-control" value="<?=date("Y-m-d")?>">	</td>
+                  </tr>
+                  <tr>
+                      <th>택배사</th>
+                      <td>
+                          <select class="form-control" name="delivery_company" id="delivery_company">
+                              <option value="">==선택==</option>
+                              <?php for($ii=0;$ii<sizeof($deliveryCompanies);$ii++){ ?>
+                                  <option value="<?=$deliveryCompanies[$ii]['nIdx']?>:<?=$deliveryCompanies[$ii]['strCompanyName']?>" ><?=$deliveryCompanies[$ii]['strCompanyName']?></option>
+                              <?php } ?>
+                          </select>
+                      </td>
                   </tr>
                   <tr>
                      <th>운송장 번호</th>

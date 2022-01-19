@@ -1685,6 +1685,20 @@
   }
 
   public function setTrackDelivery(){
+    $SCRAP_URL="http://localhost:8080/";
+    $url = $SCRAP_URL.'api/getDeliveryCompanyInfo';
+    $curl = curl_init();
+    curl_setopt($curl, CURLOPT_URL, $url);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+    $result = curl_exec($curl);
+    curl_getinfo($curl, CURLINFO_HTTP_CODE);
+    curl_close($curl);
+    $decoded_json = json_decode($result, true);
+    if(isset($decoded_json['status']) && $decoded_json['status'] == 'success'){
+      $data['deliveryCompanies'] = $decoded_json['data'];
+    }else{
+      $data['deliveryCompanies'] = [];
+    }
     $data['sOrdSeq'] = $this->input->get("sOrdSeq");
     $data['track'] = $this->base_model->getTrackById($this->input->get("sOrdSeq"));
     $this->load->view("setTrackDelivery",$data);
@@ -1693,9 +1707,32 @@
   public function updateTrackNumber(){
     $data= $this->input->post();
     $id = $data['ORD_SEQ'];
+    $sim_id = $data['simbongsa_ord_id'];
+    $companyId = explode(':', $data['delivery_company']);
     unset($data['ORD_SEQ']);
-    $this->base_model->updateDataById($id,$data,"delivery","id");
-    echo "<script>window.close();</script>";
+
+    if($sim_id){//심봉사주문인경우
+        $SCRAP_URL="http://localhost:8080/";
+        $url = $SCRAP_URL.'api/setOrderInvoiceInfo?nIdx='.$sim_id.'&invoiceNumber='.$data['tracking_number'].'&companyId='.$companyId[0];
+        $curl = curl_init();
+        curl_setopt($curl, CURLOPT_URL, $url);
+        curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
+        curl_getinfo($curl, CURLINFO_HTTP_CODE);
+        $result = curl_exec($curl);
+        curl_close($curl);
+        $decoded_json = json_decode($result, true);
+        if($decoded_json['status'] == 'success'){
+            $this->base_model->updateDataById($id,$data,"delivery","id");
+            echo "<script>alert('송장번호 전송에 성공했습니다.');window.close();</script>";
+        }else{
+            echo "<script>alert('송장번호 전송에 실패했습니다.');window.close();</script>";
+        }
+    }else{//일반인경우
+        $this->base_model->updateDataById($id,$data,"delivery","id");
+        echo "<script>window.close();</script>";
+    }
+
+
   }
 
 

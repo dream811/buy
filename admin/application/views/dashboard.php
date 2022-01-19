@@ -327,7 +327,9 @@ switch ($step) {
                   </colgroup>
                   <thead class="thead-dark">
                     <tr > 
-                      <th style="padding-top:10px;"><input type="checkbox" name="chkORD_SEQAll" id="chkORD_SEQAll" value="Y" onclick="fnCkBoxAllSel( 'frmList', 'chkORD_SEQAll', 'chkORD_SEQ[]' );"><br>No
+                      <th style="padding-top:10px;">
+                          <input type="checkbox" name="chkORD_SEQAll" id="chkORD_SEQAll" value="Y" onclick="fnCkBoxAllSel( 'frmList', 'chkORD_SEQAll', 'chkORD_SEQ[]' );">
+                          <br>No
                       </th> 
                       <th>주문번호<br>센터</th>
                       <th>주문구분<br>배송방식</th> 
@@ -345,7 +347,12 @@ switch ($step) {
                   <?php foreach($deliver_content as $value): ?>
                     <tr>
                       <td class="seq" rowspan="2" style="padding:10px 7px 4px 7px; ">
-                        <label class=""><input type="checkbox" name="chkORD_SEQ[]" value="<?=$value->id?>"><br><?=$value->id?></label><br>
+                        <label class="">
+                            <input type="checkbox" name="chkORD_SEQ[]" value="<?=$value->id?>"><br><?=$value->id?>
+                        </label><br>
+                          <?php if($value->simbongsa_ord_id) :?>
+                            <span class="badge" style="background-color: red;">심</span><br>
+                          <?php endif; ?>
                         <span style="color:red; font-weight: bold;"></span>
                         <span class="whChaBtn_bg">
                           <button type="button" class="txt" onclick="fnProView('<?=$value->id?>','','');" title="상품보기"><i class="fa fa-plus-circle" aria-hidden="true"></i></button>
