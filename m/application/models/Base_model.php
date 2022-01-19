@@ -892,7 +892,7 @@ public function getMail($type=-1,$category=-1,$limit="",$userId=0,$shcol=null,$s
     public function getDeCrea($r=null){
         $a = "";
         if($r!=null)
-            $a = " LIMIT ".$r." ".$r+6;
+            $a = " LIMIT ".$r." ".($r+6);
         $ff = $this->db->query("SELECT * FROM `tbl_sproducts` WHERE `use` = 1 AND `sold` = 1 AND `singo` > orgprice+addprice ORDER BY `updated_date` DESC ".$a);
         return $ff->result();
     }
@@ -1259,5 +1259,4 @@ public function getMail($type=-1,$category=-1,$limit="",$userId=0,$shcol=null,$s
         $result = $query->result();
         return $result;
     }
-}?>
-
+}
