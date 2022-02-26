@@ -176,7 +176,7 @@ class Index extends BaseController {
 
         //
         $orderIds = $this->input->get('orderIds');
-        $SCRAP_URL="http://localhost:8080/";
+        $SCRAP_URL="http://simbongsa.co.kr/";
         $url = $SCRAP_URL.'api/getOrderInfo?orderIds='.$orderIds;
 
         $curl = curl_init();
@@ -186,12 +186,17 @@ class Index extends BaseController {
         curl_getinfo($curl, CURLINFO_HTTP_CODE);
         curl_close($curl);
         $decoded_json = json_decode($result, true);
+		print_r($decoded_json);	
         if($decoded_json['status'] == 'success'){
                 $data['orderInfos'] = $decoded_json['data'];
-                $mob_no = explode("-", $data['orderInfos']['strOrdererSafeNumber']);
-                $data['MOB_NO1'] = $mob_no[0];
-                $data['MOB_NO2'] = $mob_no[1] ?? "";
-                $data['MOB_NO3'] = $mob_no[2] ?? "";
+                foreach ($data['orderInfos'] as $key => $value) {
+					$mob_no = explode("-", $value['order']['strOrdererNumber'] == "" ? $value['order']['strOrdererSafeNumber'] : $value['order']['strOrdererNumber']);
+					$data['PCC_CODE'] = $value['order']['strOSIDPersonalCustomClearanceCode'];
+					$data['MOB_NO1'] = $mob_no[0];
+					$data['MOB_NO2'] = $mob_no[1] ?? "";
+					$data['MOB_NO3'] = $mob_no[2] ?? "";
+				}
+				
         }else{
 
             $data['orderInfo'] = [];

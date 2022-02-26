@@ -1685,7 +1685,7 @@
   }
 
   public function setTrackDelivery(){
-    $SCRAP_URL="http://localhost:8080/";
+    $SCRAP_URL="http://simbongsa.co.kr/";
     $url = $SCRAP_URL.'api/getDeliveryCompanyInfo';
     $curl = curl_init();
     curl_setopt($curl, CURLOPT_URL, $url);
@@ -1712,7 +1712,7 @@
     unset($data['ORD_SEQ']);
 
     if($sim_id){//심봉사주문인경우
-        $SCRAP_URL="http://localhost:8080/";
+      $SCRAP_URL="http://simbongsa.co.kr/";
         $url = $SCRAP_URL.'api/setOrderInvoiceInfo?nIdx='.$sim_id.'&invoiceNumber='.$data['tracking_number'].'&companyId='.$companyId[0];
         $curl = curl_init();
         curl_setopt($curl, CURLOPT_URL, $url);
